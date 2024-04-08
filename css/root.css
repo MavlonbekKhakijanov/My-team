@@ -1,5 +1,6 @@
 @import "./root.css";
 :root {
+  --main-font: "Livvic" sans-serif;
   --Midnight-Green-color: #014e56;
   --Light-Coral-color: #f67e7e;
   --white-color: #fff;

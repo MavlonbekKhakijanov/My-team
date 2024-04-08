@@ -1,0 +1,162 @@
+.header {
+  background: url(../images/header-1-bg.png) left no-repeat,
+    url(../images/header-bg-2.png) bottom right 19.5rem no-repeat;
+
+  background-color: var(--Midnight-Green-color);
+  transition: 0.3s;
+}
+
+.nav-container {
+  margin-top: 7.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12.9rem;
+}
+
+.bars {
+  display: none;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+.menue-list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.company-logo {
+  font-size: 4rem;
+  color: var(--white-color);
+}
+.menue-link {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.header-hero__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 25rem;
+}
+.header-hero__title {
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 1;
+  color: var(--white-color);
+}
+.header-hero__title span {
+  color: var(--Light-Coral-color);
+}
+hr {
+  border: none;
+  width: 50px;
+  height: 4px;
+  background-color: var(--rapture-blue-color);
+  margin-bottom: 7.9rem;
+}
+.header-hero__subtitle__description {
+  font-size: 1.8rem;
+  color: var(--white-color);
+  line-height: 1.5;
+  font-weight: 600;
+  width: 445px;
+  /* margin-left: 32.5rem; */
+}
+
+/* MAIN SECTION */
+
+/* braek points Tablet */
+@media (max-width: 768px) {
+  hr {
+    display: none;
+  }
+  .header {
+    background: url(../images/header-bg-2.png) bottom right 19.5rem no-repeat;
+
+    background-color: var(--Midnight-Green-color);
+  }
+
+  .header-hero__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 25.6rem;
+  }
+  .bars {
+    display: none;
+  }
+  .nav-container {
+    margin-top: 6.4rem;
+    max-width: 689px;
+    padding: 0;
+  }
+  .header-left {
+    gap: 4.8rem;
+  }
+  .header-hero__title {
+    font-size: 6.4rem;
+    text-align: center;
+  }
+  .header-hero__subtitle__description {
+    margin-left: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/* MOBILE DESCTOP */
+@media (max-width: 470px) {
+  .header {
+    background: url(../images/header-bg-2.png) bottom no-repeat;
+
+    background-color: var(--Midnight-Green-color);
+  }
+  hr {
+    display: none;
+  }
+
+  .nav-container {
+    margin-top: 4.8rem;
+    max-width: 327pxpx;
+    padding: 0;
+    margin-bottom: 8rem;
+  }
+  .header-hero__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 19.7rem;
+  }
+  .menue-list {
+    display: none;
+  }
+  .btn-header {
+    display: none;
+  }
+  .bars {
+    display: block;
+    font-size: 1.7rem;
+    color: var(--white-color);
+  }
+  .header-hero__title {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1;
+  }
+  .header-hero__subtitle__description {
+    margin-left: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    width: 327px;
+  }
+}

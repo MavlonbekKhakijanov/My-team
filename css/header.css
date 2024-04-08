@@ -53,12 +53,19 @@
 .header-hero__title span {
   color: var(--Light-Coral-color);
 }
-hr {
+.border-1 {
   border: none;
   width: 50px;
   height: 4px;
   background-color: var(--rapture-blue-color);
   margin-bottom: 7.9rem;
+}
+.border-2 {
+  border: none;
+  width: 50px;
+  height: 4px;
+  background-color: var(--Light-Coral-color);
+  margin-bottom: 5rem;
 }
 .header-hero__subtitle__description {
   font-size: 1.8rem;
@@ -69,11 +76,9 @@ hr {
   /* margin-left: 32.5rem; */
 }
 
-/* MAIN SECTION */
-
 /* braek points Tablet */
-@media (max-width: 768px) {
-  hr {
+@media (max-width: 1000px) {
+  .border-1 {
     display: none;
   }
   .header {
@@ -119,7 +124,7 @@ hr {
 
     background-color: var(--Midnight-Green-color);
   }
-  hr {
+  .border-1 {
     display: none;
   }
 

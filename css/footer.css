@@ -1,0 +1,153 @@
+@import "./global.css";
+.footer-hero {
+  background: url(../images/footer-bg.png) bottom left no-repeat;
+  background-color: var(--Light-Coral-color);
+}
+.footer-hero__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0;
+}
+.footer-hero__container__title {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1;
+  color: var(--sacramento-state-green-color);
+}
+.footer-hero__btn {
+  border: 2px solid var(--sacramento-state-green-color);
+  color: var(--sacramento-state-green-color);
+}
+.footer__bottom {
+  background-color: var(--darck-green-color);
+  padding: 4.8rem 0;
+}
+.footer__bottom__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left {
+  display: flex;
+  align-items: start;
+  gap: 12.5rem;
+}
+.footer-left__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-link {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.footer-left__contact__item {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  opacity: 0.6;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.fa-brands {
+  color: var(--white-color);
+  font-size: 2.4rem;
+  margin-right: 1.6rem;
+}
+.copyright {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.footer-nav__icon {
+  display: none;
+}
+.footer-right__contact {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .footer-icon {
+    display: none;
+  }
+  .footer-nav__icon {
+    display: block;
+  }
+  .footer-left__contact {
+    display: none;
+  }
+  .footer-right__contact {
+    display: block;
+    text-align: right;
+  }
+  .company-logo {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 475px) {
+  .footer-hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .footer__bottom__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-left__logo {
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .company-logo {
+    margin-bottom: 0;
+  }
+  .footer-right__contact {
+    text-align: center;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+  .footer-nav__icon {
+    display: none;
+  }
+  .footer-icon {
+    margin-top: 2.4rem;
+    display: block;
+  }
+
+  /* .footer-left__contact {
+    display: none;
+  }
+  .footer-right__contact {
+    display: block;
+    text-align: center;
+  } */
+  /* .footer-nav__icon {
+    text-align: center;
+    align-items: center;
+  }
+  .fa-brands {
+    margin-right: 0;
+  } */
+}

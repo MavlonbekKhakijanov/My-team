@@ -36,6 +36,18 @@
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.5;
+  transition: 0.3s;
+  &:hover {
+    color: var(--Light-Coral-color);
+  }
+}
+.btn-header {
+  transition: 0.3s;
+}
+.btn-header:hover {
+  background-color: var(--white-color);
+  color: var(--darck-green-color);
+  cursor: pointer;
 }
 .header-hero__bottom {
   display: flex;

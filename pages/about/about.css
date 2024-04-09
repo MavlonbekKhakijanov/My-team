@@ -34,6 +34,115 @@
   color: var(--white-color);
 }
 
+/* MAIN SECTION */
+.directors {
+  background: url(../../images/about-bg-1.png) no-repeat top left,
+    url(../../images/about-bg-2.png) no-repeat bottom right;
+  background-color: var(--deep-green-color);
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+.directors__title {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6.4rem;
+}
+.directors__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+.directors__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 3.2rem 0;
+  background-color: var(--sacramento-state-green-color);
+  gap: 3rem;
+  margin-bottom: 4.5rem;
+}
+.directors__card:hover .plus-icon {
+  color: var(--rapture-blue-color);
+  transform: rotate(45deg);
+}
+.directors__card:hover .overlay {
+  height: 100%;
+}
+.directors__card__img {
+  border-radius: 50%;
+  border: 2px dotted #c4fffe;
+}
+.directors__name {
+  color: var(--rapture-blue-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+.directors__positions {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 37, 41, 94%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.3s;
+}
+.ovrlaey-info {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 4.8rem;
+  line-height: 1.5;
+}
+.overlay-icon {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.fa-brands {
+  margin: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.plus-icon {
+  z-index: 100;
+  background-color: var(--sacramento-state-green-color);
+  color: var(--Light-Coral-color);
+  font-size: 5.6rem;
+  border-radius: 50%;
+  margin-bottom: -6rem;
+  transition: 0.4s;
+  &:hover {
+    transform: rotate(45deg);
+    color: var(--rapture-blue-color);
+    cursor: pointer;
+  }
+}
+
+/* MAIN SECTION END */
+
+/* BREAKPOINTS TABLE */
 @media (max-width: 1000px) {
   .about-hero {
     display: flex;
@@ -61,7 +170,36 @@
     margin-right: 0;
     color: var(--white-color);
   }
+  .directors {
+    background-color: var(--deep-green-color);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  /* cards */
+  .directors__title {
+    font-size: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+  .directors__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+  }
+  .directors__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    padding: 3.2rem 0;
+    background-color: var(--sacramento-state-green-color);
+    gap: 1.6rem;
+    margin-bottom: 4.5rem;
+  }
 }
+
+/* BREAK POINTS MOBILE  */
 @media (max-width: 535px) {
   .about-hero {
     display: flex;
@@ -81,5 +219,23 @@
     line-height: 1.5;
     text-align: center;
     margin-bottom: 9rem;
+  }
+  .directors {
+    background: url(../../images/about-bg-1.png) no-repeat top left;
+    background-size: 60px 110px;
+    background-color: var(--deep-green-color);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .directors__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3.2rem 0;
+    background-color: var(--sacramento-state-green-color);
+    gap: 1.6rem;
+    margin-bottom: 4.5rem;
   }
 }

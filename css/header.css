@@ -111,7 +111,6 @@
   }
   .nav-container {
     margin-top: 6.4rem;
-    max-width: 689px;
     padding: 0;
   }
   .header-left {
@@ -130,7 +129,11 @@
 }
 
 /* MOBILE DESCTOP */
-@media (max-width: 470px) {
+@media (max-width: 535px) {
+  .container {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
   .header {
     background: url(../images/header-bg-2.png) bottom no-repeat;
 

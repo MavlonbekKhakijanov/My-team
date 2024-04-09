@@ -1,4 +1,4 @@
-@import "./global.css";
+@import "./style.css";
 
 *,
 *::after,
@@ -33,7 +33,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: var(--main-font);
+  /* font-family: "Livvic", sans-serif; */
 }
 
 /* normalize css problem fixed */
@@ -43,7 +43,7 @@ h1 {
 
 .container {
   width: 100%;
-  max-width: 1110px; /* it depends on you project */
+  max-width: 1210px; /* it depends on you project */
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;

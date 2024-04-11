@@ -33,7 +33,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* font-family: "Livvic", sans-serif; */
+  font-family: "Livvic", sans-serif;
 }
 
 /* normalize css problem fixed */

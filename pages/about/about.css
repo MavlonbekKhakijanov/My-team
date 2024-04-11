@@ -140,8 +140,62 @@
   }
 }
 
-/* MAIN SECTION END */
+/* CLIENTS */
 
+/* MAIN SECTION END */
+.clients {
+  background: url(../../images/clients-circle.png) top left no-repeat;
+
+  background-color: var(--sacramento-state-green-color);
+}
+.clients-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 5.4rem;
+  overflow: hidden;
+}
+.clients-title {
+  margin-top: 14rem;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 4.8rem;
+  text-align: center;
+  color: var(--white-color);
+}
+.clients-blog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14rem;
+}
+
+.client__img {
+  width: 165px;
+  height: 28px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+.verge {
+  width: 165px;
+  height: 28px;
+}
+.jakarta {
+  width: 184px;
+  height: 23px;
+}
+.guardian {
+  width: 180px;
+}
+.gadgets {
+  height: 45px;
+  width: 98px;
+}
 /* BREAKPOINTS TABLE */
 @media (max-width: 1000px) {
   .about-hero {
@@ -197,6 +251,43 @@
     gap: 1.6rem;
     margin-bottom: 4.5rem;
   }
+  .clients {
+    background: url(../../images/clients-circle.png) top -58.2% left no-repeat;
+
+    background-color: var(--sacramento-state-green-color);
+  }
+  /* clents */
+  .clients-title {
+    margin-top: 10rem;
+    font-size: 3.2rem;
+  }
+  .clients-blog {
+    margin-bottom: 10rem;
+  }
+
+  .client__img {
+    width: 105px;
+    height: 17px;
+  }
+  .jakarta {
+    width: 169px;
+    height: 21px;
+  }
+  .guardian {
+    width: 109px;
+  }
+  .gadgets {
+    height: 45px;
+    width: 98px;
+  }
+  .clients-blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14rem;
+  }
 }
 
 /* BREAK POINTS MOBILE  */
@@ -237,5 +328,36 @@
     background-color: var(--sacramento-state-green-color);
     gap: 1.6rem;
     margin-bottom: 4.5rem;
+  }
+
+  /* CLENTS BLOG */
+  .clients {
+    background: url(../../images/clients-circle.png) top -28.2% left -36%
+      no-repeat;
+
+    background-color: var(--sacramento-state-green-color);
+  }
+
+  .clients-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+  .clients-title {
+    margin-top: 8rem;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--white-color);
+  }
+  .clients-blog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4.2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
   }
 }

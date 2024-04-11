@@ -90,6 +90,9 @@
     color: var(--Light-Coral-color);
   }
 }
+.footer__icon-link {
+  margin-right: 1rem;
+}
 .copyright {
   color: var(--white-color);
   font-size: 1.5rem;
@@ -100,6 +103,7 @@
 .footer-nav__icon {
   display: none;
 }
+
 .footer-right__contact {
   display: none;
 }
@@ -107,8 +111,10 @@
   .footer-icon {
     display: none;
   }
+
   .footer-nav__icon {
-    display: block;
+    display: flex;
+    gap: 1rem;
   }
   .footer-left__contact {
     display: none;

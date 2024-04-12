@@ -111,6 +111,9 @@
   .footer-icon {
     display: none;
   }
+  .footer-hero__container__title {
+    padding: 8rem 0;
+  }
 
   .footer-nav__icon {
     display: flex;
@@ -127,13 +130,19 @@
     margin-bottom: 4rem;
   }
 }
-@media (max-width: 475px) {
+@media (max-width: 535px) {
   .footer-hero__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 4rem 2rem;
+  }
+  .footer-hero__container__title {
+    padding: 8rem 0;
+  }
+  .footer-hero__btn {
+    margin-bottom: 5rem;
   }
   .footer__bottom__container {
     display: flex;
